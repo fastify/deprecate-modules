@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  verdaccio:
+    image: verdaccio/verdaccio:5
+    container_name: verdaccio
+    environment:
+      VERDACCIO_PORT: 8000
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./verdaccio/storage:/verdaccio/storage
+      - ./verdaccio:/verdaccio

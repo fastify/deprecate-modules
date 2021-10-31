@@ -1,0 +1,14 @@
+{
+  "name": "<<module_name>>",
+  "version": "<<module_version>>",
+  "main": "index.js",
+  "license": "<<module_license>>",
+  "repository": {
+    "url": "git://github.com/fastify/<<module_name>>.git"
+  },
+  "homepage": "https://github.com/fastify/<<module_name>>",
+  "dependencies": {
+    "fastify-warning": "^0.2.0",
+    "<<new_module_name>>": "<<new_module_version>>"
+  }
+}

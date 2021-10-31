@@ -1,0 +1,31 @@
+{
+  "name": "deprecate-modules",
+  "version": "1.0.0",
+  "description": "Used to deprectate fastify-* modules for @fastify/ modules",
+  "main": "index.js",
+  "packageManager": "pnpm@6.19.1",
+  "scripts": {
+    "build": "node index.mjs",
+    "clean": "rm -rf verdaccio/storage && rm -rf out/*",
+    "publish:local": "./publish-local.sh",
+    "pretest": "npm run clean && npm run build && docker-compose up -d && npm run publish:local",
+    "posttest": "docker-compose down",
+    "test": "node test/fastify-cookie.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fastify/deprecate-modules.git"
+  },
+  "author": "Fastify Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fastify/deprecate-modules/issues"
+  },
+  "homepage": "https://github.com/fastify/deprecate-modules#readme",
+  "devDependencies": {
+    "standard": "^16.0.4"
+  },
+  "dependencies": {
+    "umeta": "^0.2.4"
+  }
+}

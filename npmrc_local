@@ -1,0 +1,3 @@
+registry=http://localhost:8000/
+//localhost:8000/:_authToken="4+WcazhYgBHVBTUVwLOjvg=="
+always-auth=true

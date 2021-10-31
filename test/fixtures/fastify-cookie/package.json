@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "fastify-cookie": "^5.3.1"
+  }
+}
