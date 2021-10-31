@@ -15,6 +15,7 @@ const execp = promisify(child_process.exec)
 const opts = {
   cwd: fixturePath,
   env: Object.assign({}, process.env, {
+    npm_config_userconfig: localNpmRc,
     NPM_CONFIG_USERCONFIG: localNpmRc
   })
 }
