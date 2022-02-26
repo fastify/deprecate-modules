@@ -1,6 +1,8 @@
-import modules from './lib/modules.js'
 import fs from 'fs/promises'
 import path from 'path'
+
+const modulesSource = await fs.readFile('./lib/modules.json')
+const modules = JSON.parse(modulesSource.toString('utf8'))
 
 import { indexTmpl, pkgTmpl, readmeTmpl } from './templates/index.mjs'
 

@@ -1,0 +1,532 @@
+[
+  {
+    "name": "fastify-accepts",
+    "versionToPublish": "2.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/accepts",
+      "version": "3.0.0"
+    }
+  },
+  {
+    "name": "fastify-accepts-serializer",
+    "versionToPublish": "3.3.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/accepts-serializer",
+      "version": "4.0.0"
+    }
+  },
+  {
+    "name": "fastify-api",
+    "versionToPublish": "0.3.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/api",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "name": "fastify-auth",
+    "versionToPublish": "1.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/auth",
+      "version": "2.0.0"
+    }
+  },
+  {
+    "name": "fastify-autoload",
+    "versionToPublish": "3.12.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/autoload",
+      "version": "4.0.0"
+    }
+  },
+  {
+    "name": "fastify-awilix",
+    "versionToPublish": "1.3.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/awilix",
+      "version": "2.0.0"
+    }
+  },
+  {
+    "name": "fastify-basic-auth",
+    "versionToPublish": "2.3.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/basic-auth",
+      "version": "3.0.0"
+    }
+  },
+  {
+    "name": "fastify-bearer-auth",
+    "versionToPublish": "6.3.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/bearer-auth",
+      "version": "7.0.0"
+    }
+  },
+  {
+    "name": "fastify-caching",
+    "versionToPublish": "6.3.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/caching",
+      "version": "7.0.0"
+    }
+  },
+  {
+    "name": "fastify-circuit-breaker",
+    "versionToPublish": "1.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/circuit-breaker",
+      "version": "2.0.0"
+    }
+  },
+  {
+    "name": "fastify-citgm",
+    "versionToPublish": "0.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/citgm",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "name": "fastify-cli",
+    "versionToPublish": "2.16.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/cli",
+      "version": "3.0.0"
+    }
+  },
+  {
+    "name": "fastify-compress",
+    "versionToPublish": "4.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/compress",
+      "version": "5.0.0"
+    }
+  },
+  {
+    "name": "fastify-cookie",
+    "versionToPublish": "5.7.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/cookie",
+      "version": "6.0.0"
+    }
+  },
+  {
+    "name": "fastify-cors",
+    "versionToPublish": "6.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/cors",
+      "version": "7.0.0"
+    }
+  },
+  {
+    "name": "fastify-csrf",
+    "versionToPublish": "3.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/csrf",
+      "version": "4.0.0"
+    }
+  },
+  {
+    "name": "fastify-diagnostics-channel",
+    "versionToPublish": "1.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/diagnostics-channel",
+      "version": "2.0.0"
+    }
+  },
+  {
+    "name": "fastify-elasticsearch",
+    "versionToPublish": "1.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/elasticsearch",
+      "version": "2.0.0"
+    }
+  },
+  {
+    "name": "fastify-env",
+    "versionToPublish": "2.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/env",
+      "version": "3.0.0"
+    }
+  },
+  {
+    "name": "fastify-error",
+    "versionToPublish": "1.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/error",
+      "version": "2.0.0"
+    }
+  },
+  {
+    "name": "fastify-etag",
+    "versionToPublish": "2.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/etag",
+      "version": "3.0.0"
+    }
+  },
+  {
+    "name": "fastify-express",
+    "versionToPublish": "0.4.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/express",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "name": "fastify-flash",
+    "versionToPublish": "2.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/flash",
+      "version": "3.0.0"
+    }
+  },
+  {
+    "name": "fastify-formbody",
+    "versionToPublish": "5.3.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/formbody",
+      "version": "6.0.0"
+    }
+  },
+  {
+    "name": "fastify-funky",
+    "versionToPublish": "1.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/funky",
+      "version": "2.0.0"
+    }
+  },
+  {
+    "name": "fastify-helmet",
+    "versionToPublish": "7.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/helmet",
+      "version": "8.0.0"
+    }
+  },
+  {
+    "name": "fastify-hotwire",
+    "versionToPublish": "0.3.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/hotwire",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "name": "fastify-http-proxy",
+    "versionToPublish": "6.3.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/http-proxy",
+      "version": "7.0.0"
+    }
+  },
+  {
+    "name": "fastify-jwt",
+    "versionToPublish": "4.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/jwt",
+      "version": "5.0.0"
+    }
+  },
+  {
+    "name": "fastify-kafka",
+    "versionToPublish": "0.3.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/kafka",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "name": "fastify-leveldb",
+    "versionToPublish": "3.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/leveldb",
+      "version": "4.0.0"
+    }
+  },
+  {
+    "name": "fastify-mongodb",
+    "versionToPublish": "4.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/mongodb",
+      "version": "5.0.0"
+    }
+  },
+  {
+    "name": "fastify-multipart",
+    "versionToPublish": "5.4.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/multipart",
+      "version": "6.0.0"
+    }
+  },
+  {
+    "name": "fastify-mysql",
+    "versionToPublish": "2.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/mysql",
+      "version": "3.0.0"
+    }
+  },
+  {
+    "name": "fastify-nextjs",
+    "versionToPublish": "7.3.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/nextjs",
+      "version": "8.0.0"
+    }
+  },
+  {
+    "name": "fastify-oauth2",
+    "versionToPublish": "4.6.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/oauth2",
+      "version": "5.0.0"
+    }
+  },
+  {
+    "name": "fastify-passport",
+    "versionToPublish": "0.5.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/passport",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "name": "fastify-plugin",
+    "versionToPublish": "3.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/plugin",
+      "version": "4.0.0"
+    }
+  },
+  {
+    "name": "fastify-postgres",
+    "versionToPublish": "3.7.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/postgres",
+      "version": "4.0.0"
+    }
+  },
+  {
+    "name": "fastify-rate-limit",
+    "versionToPublish": "5.8.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/rate-limit",
+      "version": "6.0.0"
+    }
+  },
+  {
+    "name": "fastify-redis",
+    "versionToPublish": "4.4.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/redis",
+      "version": "5.0.0"
+    }
+  },
+  {
+    "name": "fastify-reply-from",
+    "versionToPublish": "6.6.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/reply-from",
+      "version": "7.0.0"
+    }
+  },
+  {
+    "name": "fastify-request-context",
+    "versionToPublish": "2.3.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/request-context",
+      "version": "3.0.0"
+    }
+  },
+  {
+    "name": "fastify-response-validation",
+    "versionToPublish": "0.3.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/response-validation",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "name": "fastify-routes",
+    "versionToPublish": "3.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/routes",
+      "version": "4.0.0"
+    }
+  },
+  {
+    "name": "fastify-routes-stats",
+    "versionToPublish": "2.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/routes-stats",
+      "version": "3.0.0"
+    }
+  },
+  {
+    "name": "fastify-schedule",
+    "versionToPublish": "1.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/schedule",
+      "version": "2.0.0"
+    }
+  },
+  {
+    "name": "fastify-secure-session",
+    "versionToPublish": "3.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/secure-session",
+      "version": "4.0.0"
+    }
+  },
+  {
+    "name": "fastify-sensible",
+    "versionToPublish": "3.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/sensible",
+      "version": "4.0.0"
+    }
+  },
+  {
+    "name": "fastify-snippets",
+    "versionToPublish": "1.2.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/snippets",
+      "version": "2.0.0"
+    }
+  },
+  {
+    "name": "fastify-soap-client",
+    "versionToPublish": "0.3.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/soap-client",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "name": "fastify-starter",
+    "versionToPublish": "1.1.0",
+    "newModule": {
+      "name": "@fastify/starter",
+      "version": "2.0.0"
+    }
+  },
+  {
+    "name": "fastify-static",
+    "versionToPublish": "4.6.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/static",
+      "version": "5.0.0"
+    }
+  },
+  {
+    "name": "fastify-swagger",
+    "versionToPublish": "4.17.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/swagger",
+      "version": "5.0.0"
+    }
+  },
+  {
+    "name": "fastify-test",
+    "versionToPublish": "1.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/test",
+      "version": "2.0.0"
+    }
+  },
+  {
+    "name": "fastify-typescript-extended-sample",
+    "versionToPublish": "1.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/typescript-extended-sample",
+      "version": "2.0.0"
+    }
+  },
+  {
+    "name": "fastify-url-data",
+    "versionToPublish": "3.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/url-data",
+      "version": "4.0.0"
+    }
+  },
+  {
+    "name": "fastify-websocket",
+    "versionToPublish": "4.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/websocket",
+      "version": "5.0.0"
+    }
+  },
+  {
+    "name": "fastify-zipkin",
+    "versionToPublish": "2.1.0",
+    "license": "MIT",
+    "newModule": {
+      "name": "@fastify/zipkin",
+      "version": "3.0.0"
+    }
+  }
+]

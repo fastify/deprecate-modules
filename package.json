@@ -7,6 +7,9 @@
   "scripts": {
     "build": "node index.mjs",
     "clean": "rm -rf verdaccio/storage && rm -rf out/*",
+    "dry-run": "npm run clean && npm run build && npm run publish:local",
+    "predry-run": "docker-compose up -d",
+    "generate-input": "node build-data.mjs",
     "publish:local": "./publish-local.sh",
     "pretest": "npm run clean && npm run build && docker-compose up -d && npm run publish:local",
     "posttest": "docker-compose down",
@@ -26,6 +29,9 @@
     "standard": "^16.0.4"
   },
   "dependencies": {
-    "umeta": "^0.2.4"
+    "dotenv": "^16.0.0",
+    "semver": "^7.3.5",
+    "umeta": "^0.2.4",
+    "undici": "^4.14.1"
   }
 }
