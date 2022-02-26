@@ -8,7 +8,7 @@
   },
   "homepage": "https://github.com/fastify/<<module_name>>",
   "dependencies": {
-    "fastify-warning": "^0.2.0",
+    "process-warning": "^1.0.0",
     "<<new_module_name>>": "<<new_module_version>>"
   }
 }

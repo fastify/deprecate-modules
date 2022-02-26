@@ -10,9 +10,6 @@ to the live `npmjs.org` registry.
 
 ## TODO
 
-+ Publish `@fastify/warning@1.0.0`
-+ Update `templates/package.json` to use `@fastify/warning`
-+ Update `templates/index.js` to use `@fastify/warning`
 + Update `templates/index.js` for ESM/TS stuff
 + Add `publish-live.sh`
 + Add method for adding a NPM publish token for the live publish script
