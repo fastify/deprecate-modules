@@ -10,9 +10,9 @@ to the live `npmjs.org` registry.
 
 ## TODO
 
-+ Update `templates/index.js` for ESM/TS stuff
-+ Add `publish-live.sh`
-+ Add method for adding a NPM publish token for the live publish script
++ Checkout module git repos
++ Update `package.json` in repos with new name and version
++ Push changes for new PR against each module
 
 ## Dry Run
 
