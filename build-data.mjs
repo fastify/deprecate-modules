@@ -21,7 +21,7 @@ for await (const repo of getRepos) {
   if (
     repo.name.startsWith('fastify-') === false ||
     repo.name.includes('example') === true ||
-    repo.name === 'fastify-vite' ||
+    ['fastify-vite', 'fastify-dx'].includes(repo.name) === true ||
     repo.archived === true
   ) {
     continue
@@ -57,6 +57,11 @@ for await (const repo of getRepos) {
 import { writeFile } from 'fs/promises'
 writeFile('./lib/modules.json', JSON.stringify(modules, null, 2))
 
+/**
+ * Iterates the full list of repositories in the Fastify organization.
+ *
+ * @yields {object} GitHub repository object.
+ */
 async function * getReposGen() {
   const params = new URLSearchParams()
   params.set('type', 'public')
@@ -106,6 +111,11 @@ async function * getReposGen() {
   } while (finished === false)
 }
 
+/**
+ * Retrieves the current `package.json` from the specified repo.
+ *
+ * @returns {object} NPM package object.
+ */
 async function getPackageJson(repoName) {
   const response = await client.request({
     method: 'GET',

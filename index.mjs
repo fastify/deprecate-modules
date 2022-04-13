@@ -1,3 +1,7 @@
+// This script reads the input `./lib/modules.json` data file, iterates
+// the items within it, and builds the deprecation modules in the `./out/`
+// directory.
+
 import fs from 'fs/promises'
 import path from 'path'
 
