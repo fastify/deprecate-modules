@@ -11,6 +11,16 @@ const modules = JSON.parse(modulesSource.toString('utf8'))
 import { indexTmpl, pkgTmpl, readmeTmpl } from './templates/index.mjs'
 
 for (const mod of modules) {
+  await buildDeprecationModule(mod)
+}
+
+/**
+ * Write a skeleton wrapper module that will act as the deprecation
+ * module when published to npmjs.com.
+ *
+ * @param {object} mod A module description from the input `modules.json`.
+ */
+async function buildDeprecationModule(mod) {
   const outDir = path.join('out', mod.name)
   const indexOut = path.join(outDir, 'index.js')
   const pkgOut = path.join(outDir, 'package.json')
@@ -28,6 +38,15 @@ for (const mod of modules) {
   await fs.writeFile(readmeOut, readme)
 }
 
+/**
+ * Utility function to replace all placeholder values in a template
+ * with the corresponding values for a module being deprecated.
+ *
+ * @param {string} str The template string with placeholder values.
+ * @param {object} mod A module description from the input `modules.json`.
+ *
+ * @returns {string} The updated string.
+ */
 function replaceAll (str, mod) {
   return str
     .slice(0)
