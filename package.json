@@ -29,6 +29,8 @@
     "standard": "^16.0.4"
   },
   "dependencies": {
+    "@npmcli/package-json": "^2.0.0",
+    "boolean": "^3.2.0",
     "dotenv": "^16.0.0",
     "semver": "^7.3.5",
     "umeta": "^0.2.4",
