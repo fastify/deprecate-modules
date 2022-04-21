@@ -14,7 +14,7 @@ to the live `npmjs.org` registry.
 
 ## Dry Run
 
-1. Add a `.env` file with a `GITHUB_TOKEN=token` line
+1. Copy `sample.env` to `.env` and adjust with real values
 1. `node build-data.mjs` to generate source data
 1. `node index.mjs` to generate deprecated module sources and repo changes
 1. `docker-compose up` to start Verdaccio server

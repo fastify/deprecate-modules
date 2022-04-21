@@ -25,9 +25,15 @@ if [ ${DRY_RUN} -eq 1 ]; then
   echo ""
 fi
 
+# The .env file is in a format that the npm `dotenv` module supports.
+# So we need to source it and export the values.
+source .env
+export GITHUB_TOKEN=${GITHUB_TOKEN}
+export NPM_PUBLISH_TOKEN=${NPM_PUBLISH_TOKEN}
+
 CURDIR=$(pwd)
-export NPM_CONFIG_USERCONFIG=${CURDIR}/npmrc_local
-export npm_config_userconfig=${CURDIR}/npmrc_local
+export NPM_CONFIG_USERCONFIG=${CURDIR}/npmrc_live
+export npm_config_userconfig=${CURDIR}/npmrc_live
 
 function publish() {
   if [ ${DRY_RUN} -eq 1 ]; then
