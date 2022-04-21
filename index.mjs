@@ -5,7 +5,7 @@
 import dotenv from 'dotenv'
 dotenv.config()
 
-import boolean from 'boolean'
+import { boolean } from 'boolean'
 let DRY_RUN = true
 if (process.env.DRY_RUN) {
   DRY_RUN = boolean(process.env.DRY_RUN)
