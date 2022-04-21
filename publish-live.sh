@@ -6,6 +6,12 @@ echo ""
 
 ## Start publishing...
 
+# The .env file is in a format that the npm `dotenv` module supports.
+# So we need to source it and export the values.
+source .env
+export GITHUB_TOKEN=${GITHUB_TOKEN}
+export NPM_PUBLISH_TOKEN=${NPM_PUBLISH_TOKEN}
+
 if [ -z "${NPM_PUBLISH_TOKEN}" ]; then
   echo "Please set NPM_PUBLISH_TOKEN to an _automation_ token that can publish packages."
   echo "See https://docs.npmjs.com/creating-and-viewing-access-tokens"
@@ -24,12 +30,6 @@ if [ ${DRY_RUN} -eq 1 ]; then
   echo 'e.g.: `DRY_RUN=0 ./publish-live.sh`'
   echo ""
 fi
-
-# The .env file is in a format that the npm `dotenv` module supports.
-# So we need to source it and export the values.
-source .env
-export GITHUB_TOKEN=${GITHUB_TOKEN}
-export NPM_PUBLISH_TOKEN=${NPM_PUBLISH_TOKEN}
 
 CURDIR=$(pwd)
 export NPM_CONFIG_USERCONFIG=${CURDIR}/npmrc_live

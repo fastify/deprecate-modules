@@ -1,4 +1,6 @@
 .env
+*.log
+*.log.json
 package-lock.json
 
 # Data dirs used by the deprecation tools.

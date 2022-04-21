@@ -114,6 +114,7 @@ function replaceAll (str, mod) {
   return str
     .slice(0)
     .replaceAll('<<module_name>>', mod.name)
+    .replaceAll('<<module_current_version>>', mod.currentVersion)
     .replaceAll('<<module_version>>', mod.versionToPublish)
     .replaceAll('<<module_license>>', mod.license)
     .replaceAll('<<new_module_name>>', mod.newModule.name)

@@ -9,6 +9,6 @@
   "homepage": "https://github.com/fastify/<<module_name>>",
   "dependencies": {
     "process-warning": "^1.0.0",
-    "<<new_module_name>>": "<<new_module_version>>"
+    "<<module_name>>-deprecated": "npm:<<module_name>>@<<module_current_version>>"
   }
 }

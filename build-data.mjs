@@ -43,6 +43,7 @@ for await (const repo of getRepos) {
 
   const modData = {
     name: pkg.name,
+    currentVersion: pkg.version,
     versionToPublish: semver.inc(pkg.version, 'minor'),
     license: pkg.license,
     newModule: {
