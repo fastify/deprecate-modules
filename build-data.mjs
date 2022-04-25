@@ -15,13 +15,32 @@ const headers = {
   'content-type': 'application/json'
 }
 
+
+const skipRepos = [
+  'fastify-api', // not in Fastify npm org
+  'fastify-awilix', // not in Fastify npm org
+  'fastify-citgm', // not an npm package
+  'fastify-csrf', // under Matteo's npm account
+  'fastify-diagnostics-channel', // not in Fastify npm org
+  'fastify-dx', // not an npm package
+  'fastify-error', // not in Fastify npm org
+  'fastify-plugin', // should remain in general npm repo
+  'fastify-routes-stats', // under Matteo's npm account
+  'fastify-schedule', // under kibertoad's npm account
+  'fastify-snippet', // not an npm package
+  'fastify-starter-codesandbox', // not an npm package
+  'fastify-test', // not an npm package
+  'fastify-typescript-extended-sample', // not an npm package
+  'fastify-vite', // not an npm package
+]
+
 const modules = []
 const getRepos = getReposGen()
 for await (const repo of getRepos) {
   if (
     repo.name.startsWith('fastify-') === false ||
     repo.name.includes('example') === true ||
-    ['fastify-vite', 'fastify-dx'].includes(repo.name) === true ||
+    skipRepos.includes(repo.name) === true ||
     repo.archived === true
   ) {
     continue
