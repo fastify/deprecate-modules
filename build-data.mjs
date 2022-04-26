@@ -20,12 +20,9 @@ const skipRepos = [
   'fastify-api', // not in Fastify npm org
   'fastify-awilix', // not in Fastify npm org
   'fastify-citgm', // not an npm package
-  'fastify-csrf', // under Matteo's npm account
-  'fastify-diagnostics-channel', // not in Fastify npm org
+  'fastify-csrf', // conflict -- needs new name and handling manually
   'fastify-dx', // not an npm package
-  'fastify-error', // not in Fastify npm org
   'fastify-plugin', // should remain in general npm repo
-  'fastify-routes-stats', // under Matteo's npm account
   'fastify-schedule', // under kibertoad's npm account
   'fastify-snippet', // not an npm package
   'fastify-starter-codesandbox', // not an npm package
