@@ -210,7 +210,10 @@ async function updatePackageJson({ repoDir, mod }) {
   const pkg = await PackageJson.load(repoDir)
   pkg.update({
     version: mod.newModule.version,
-    name: mod.newModule.name
+    name: mod.newModule.name,
+    publishConfig: {
+      access: 'public'
+    }
   })
   await pkg.save()
 }
