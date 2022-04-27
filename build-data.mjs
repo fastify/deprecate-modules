@@ -19,6 +19,7 @@ const headers = {
 const skipRepos = [
   'fastify-api', // not in Fastify npm org
   'fastify-awilix', // not in Fastify npm org
+  'fastify-cli', // should remain in general npm repo
   'fastify-citgm', // not an npm package
   'fastify-csrf', // conflict -- needs new name and handling manually
   'fastify-dx', // not an npm package
