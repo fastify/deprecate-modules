@@ -12,6 +12,7 @@ if (process.env.DRY_RUN) {
 }
 
 import { spawn } from "child_process"
+import { setTimeout } from 'timers/promises'
 import fs from 'fs/promises'
 import path from 'path'
 import PackageJson from '@npmcli/package-json'
@@ -55,7 +56,16 @@ for (const mod of modules) {
   }
   statuses[mod.name] = status
 
+  console.error(`${mod.name}: starting to process`)
+  // We need to wait a few seconds to avoid GitHub's secondary rate limits.
+  // See https://docs.github.com/en/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits
+  // We choose 30 seconds in an effort to avoid hitting the undisclosed limits.
+  // The work we are doing generates notifications and is thus more severely
+  // limited.
+  await setTimeout(30000)
+
   try {
+    console.error(`${mod.name}: building deprecation module`)
     await buildDeprecationModule(mod)
     status.deprecationModule.published = true
     status.deprecationModule.versionPublished = mod.versionToPublish
@@ -66,6 +76,7 @@ for (const mod of modules) {
   }
 
   try {
+    console.error(`${mod.name}: building replacement module`)
     const prUrl = await buildReplacementModule(mod)
     status.replacementModule.prCreated = true
     status.replacementModule.prUrl = prUrl
@@ -334,7 +345,8 @@ async function createPullRequest({ repoDir, mod }) {
   })
 
   if (response.statusCode !== 201) {
-    console.log(await response.body.text())
+    console.error(`${mod}: failed to create pull request`)
+    console.error(await response.body.text())
     throw Error(`pr create failed with code ${response.statusCode}`)
   }
 
