@@ -14,7 +14,7 @@ to the live `npmjs.org` registry.
 1. `node build-data.mjs` to generate source data
 1. `node index.mjs` to generate deprecated module sources and repo changes
 1. `docker-compose up` to start Verdaccio server
-1. `npm run publish-local` to publish modules to Verdaccio server
+1. `npm run publish:local` to publish modules to Verdaccio server
 
 ## Publishing Live Modules
 
