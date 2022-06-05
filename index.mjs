@@ -282,6 +282,7 @@ function pushChanges({ repoDir }) {
   )
 
   return new Promise((resolve, reject) => {
+    proc.stderr.pipe(process.stderr)
     proc.on('error', reject)
     proc.on('exit', (code) => {
       if (code !== 0) {
